@@ -1,0 +1,52 @@
+YAHTSEE modellering
+
+Ni ska skapa en klass som modellerar tärningar i en kopp. 
+En användare av klassen ska kunna följande:
+- Antal tärningar i koppen
+- Läsa en tärning med index
+- Läsa Högsta och lägsta tärningen
+- Sortera tärningar i nummerordning
+- Skaka koppen och få slumpmässiga tärningar
+- Få en string representation av tärningarna i koppen så att innehållet kan skrivas ut enkelt
+
+Sprint 1
+- Studera Interface ICupOfDice, ICupDoubleDice, ICupYahtzeeDice
+- diskutera implementationen av csCupOfDice som ska implementera ICupOfDice
+- Glöm inte constructor och ToString()
+
+Sprint 2
+- Skapa en class som implementerar ICupOfDice, kalla den csCupOfDice
+- Om man försöker skapa en instans med mindre än 1 eller fler an 10 tärningar
+   kasta ett fel: meddelande med throw 
+
+
+Sprint 3
+I Main()
+- Fråga användaren om hur många tärningar koppen ska innehålla
+- Skapa en instans av csCupOfDice med antalet tärningar
+- Skriv ut tärningarna i koppen
+- Sortera tärningar och skriv ut tärningarna i koppen
+- Blanda tärningar och skriv ut tärningarna i koppen 
+- Skriv ut tärningar med index, t ex [0] för första tärningen
+- Skriv ut Högsta och Lägsta tärning
+- Använd try - catch för att fånga ett kastat fel, t ex om man skapat en
+  instans med fel antal tärningar eller läser med index [] en träning som inte finns
+ 
+
+Sprint 4
+- Skapa en class som implementerar ICupDoubleDice, kalla den csCupDoubleDice
+- Implementera IsPair property
+- Skapa en instans av csCupDoubleDice 
+- Skriv ut tärningarna i koppen
+- Skriv ut resultatet av IsPair
+
+Sprint 5
+- Skapa en class som implementerar ICupYahtzeeDice, kalla den csCupYahtzeeDice
+- Implementera IsLargeStraight property
+- Implementera IsYahtzee property
+- Implementera Chance property
+- Skapa en instans av csCupYahtzeeDice
+- Skriv ut tärningarna i koppen
+- Skriv ut resultatet av IsLargeStraight
+- Skriv ut resultatet av IsYahtzee
+- Skriv ut resultatet av Chance
